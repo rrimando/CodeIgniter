@@ -355,7 +355,13 @@ class CI_TestCase extends PHPUnit_Framework_TestCase {
 
 	public function helper($name)
 	{
-		require_once(SYSTEM_PATH.'helpers/'.$name.'_helper.php');
+		if(file_exists(PROJECT_BASE . 'application/helpers/'.$name.'_helper.php')) {
+			require_once(PROJECT_BASE . 'application/helpers/'.$name.'_helper.php');
+		}
+
+		if(file_exists(SYSTEM_PATH.'helpers/'.$name.'_helper.php')) {
+			require_once(SYSTEM_PATH.'helpers/'.$name.'_helper.php');
+		}
 	}
 
 	// --------------------------------------------------------------------

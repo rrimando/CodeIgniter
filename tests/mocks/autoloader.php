@@ -52,7 +52,8 @@ function autoload($class)
 		'Upload',
 	   	'User_agent',
 		'Xmlrpc',
-		'Zip'
+		'Zip',
+		'S3'
 	);
 
 	$ci_drivers = array('Session', 'Cache');

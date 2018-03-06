@@ -15,6 +15,10 @@
 			<directory suffix="test.php">./codeigniter/helpers</directory>
 			<directory suffix="test.php">./codeigniter/libraries</directory>
 		</testsuite>
+		<testsuite name="Easelly Test Suite">
+			<!-- Custom Tests -->
+			<directory suffix="test.php">./easelly/helpers</directory>
+		</testsuite>
 	</testsuites>
 	<filter>
 		<whitelist>
